@@ -16,14 +16,14 @@ describe("sum", () => {
 
 describe("multiply", () => {
   test("2 * 3 = 6 olmalı", () => {
-    expect(sum(2, 3)).toBe(6);
+    expect(multiply(2, 3)).toBe(6);
   });
 
   test("negatif sayılar çalışmalı", () => {
-    expect(sum(-1, -4)).toBe(4);
+    expect(multiply(-1, -4)).toBe(4);
   });
 
   test("0 ile carpma", () => {
-    expect(sum(0, 7)).toBe(0);
+    expect(multiply(0, 7)).toBe(0);
   });
 });
