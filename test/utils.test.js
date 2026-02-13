@@ -1,4 +1,4 @@
-const { sum } = require("../src/utils");
+const { sum,multiply } = require("../src/utils");
 
 describe("sum", () => {
   test("2 + 3 = 5 olmalı", () => {
@@ -11,5 +11,19 @@ describe("sum", () => {
 
   test("0 ile toplama", () => {
     expect(sum(0, 7)).toBe(7);
+  });
+});
+
+describe("multiply", () => {
+  test("2 * 3 = 6 olmalı", () => {
+    expect(sum(2, 3)).toBe(6);
+  });
+
+  test("negatif sayılar çalışmalı", () => {
+    expect(sum(-1, -4)).toBe(4);
+  });
+
+  test("0 ile carpma", () => {
+    expect(sum(0, 7)).toBe(0);
   });
 });
